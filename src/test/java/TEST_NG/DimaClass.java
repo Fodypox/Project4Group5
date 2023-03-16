@@ -1,4 +1,4 @@
-package DimaClass;
+package TEST_NG;
 
 import Utilities.BasicDriver;
 import Utilities.MyMethods;

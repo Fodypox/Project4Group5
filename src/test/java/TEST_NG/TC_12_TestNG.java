@@ -14,7 +14,7 @@ public class TC_12_TestNG extends BasicDriver {
         getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
 
-                WebElement userName = getDriver().findElement(By.xpath("//input[@name='username']"));
+        WebElement userName = getDriver().findElement(By.xpath("//input[@name='username']"));
         userName.sendKeys("Admin");
 
 
@@ -28,18 +28,18 @@ public class TC_12_TestNG extends BasicDriver {
         WebElement adminButton = getDriver().findElement(By.xpath("//span[text()='Admin']"));
         adminButton.click();
 
-Thread.sleep(5000);
+        Thread.sleep(5000);
         WebElement addButton = getDriver().findElement(By.xpath("//i[@class='oxd-icon bi-plus oxd-button-icon']"));
-       addButton.click();
+        addButton.click();
 
-       WebElement passwordButton = getDriver().findElement(By.xpath("//input[@type='password']"));
-       passwordButton.sendKeys("ABCD123!!");
+        WebElement passwordButton = getDriver().findElement(By.xpath("//input[@type='password']"));
+        passwordButton.sendKeys("ABCD123!!");
 
 
-       WebElement passwordErrorMessage= getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[1]/div/span"));
+        WebElement passwordErrorMessage = getDriver().findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[1]/div/span"));
 
-       String expectMessage = "Your password must contain a lower-case letter, an upper-case letter, a digit and a special character. Try a different password";
-        Assert.assertEquals(passwordErrorMessage.getText(),expectMessage,"Test is failed - check your expect message");
+        String expectMessage = "Your password must contain a lower-case letter, an upper-case letter, a digit and a special character. Try a different password";
+        Assert.assertEquals(passwordErrorMessage.getText(), expectMessage, "Test is failed - check your expect message");
     }
 
 }

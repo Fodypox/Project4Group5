@@ -4,7 +4,7 @@
     <test name="OrangeHRM_Project_4">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="StepDefinitions.Nur_TestCase_4TestNG">
+            <class name="TEST_NG.Nur_TestCase_4TestNG">
                 <methods>
                     <include name="test4"/>
                 </methods>

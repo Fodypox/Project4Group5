@@ -38,6 +38,9 @@ public class NurPOMPage {
     @FindBy(xpath = "//span[text()='Passwords do not match']")
     private WebElement errorMessage;
 
+    @FindBy (xpath = "//h6[@class='oxd-text oxd-text--h6 orangehrm-main-title']")
+    private WebElement headerText;
+
 
     public WebElement getUsername() {
         return username;
@@ -78,5 +81,7 @@ public class NurPOMPage {
         return errorMessage;
     }
 
-
+    public WebElement getHeaderText() {
+        return headerText;
+    }
 }

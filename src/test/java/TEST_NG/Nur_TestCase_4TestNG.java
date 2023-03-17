@@ -1,4 +1,4 @@
-package StepDefinitions;
+package TEST_NG;
 
 import Pages.NurPOMPage;
 import Utilities.BasicDriver;
@@ -17,7 +17,7 @@ public class Nur_TestCase_4TestNG extends MyMethods {
          * **/
         NurPOMPage elements = new NurPOMPage();
         BasicDriver.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-     ;
+
         elements.getUsername().sendKeys("Admin");
         elements.getPassword().sendKeys("admin123");
         elements.getSubmit().click();

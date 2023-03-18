@@ -8,17 +8,28 @@ import java.time.Duration;
 
 public class MyMethods {
     WebDriverWait wait = new WebDriverWait(BasicDriver.getDriver(), Duration.ofSeconds(10));
-    public void sendKeysMethod(WebElement element,String keys) {
+
+    public void sendKeysMethod(WebElement element, String keys) {
         wait.until(ExpectedConditions.visibilityOf(element));
         element.sendKeys(keys);
     }
-    public void clickOnElement(WebElement element){
+
+    public void clickOnElement(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
         element.click();
     }
-    public void clearTheElement(WebElement element){
+
+    public void clearTheElement(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
         element.clear();
     }
 
+    public void wait(int seconds) {
+        try {
+            Thread.sleep(1000 * seconds);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
 }

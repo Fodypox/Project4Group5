@@ -15,23 +15,23 @@ import java.time.Duration;
 public class AslanbekStepDefinition extends MyMethods {
     WebDriverWait wait = new WebDriverWait(BasicDriver.getDriver(), Duration.ofSeconds(10));
 
-    @Given("I login as an Admin")
+    /*@Given("I login as an Admin")
     public void iLoginAsAnAdmin() {
         BasicDriver.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         sendKeysMethod(BasicDriver.getDriver().findElement(By.xpath("//input[@placeholder='Username']")), "Admin");
         sendKeysMethod(BasicDriver.getDriver().findElement(By.xpath("//input[@placeholder='Password']")), "admin123");
         clickOnElement(BasicDriver.getDriver().findElement(By.xpath("//button[@type='submit']")));
-    }
+    }*/
 
     @When("I navigate to Admin page")
     public void iNavigateToAdminPage() {
         clickOnElement(BasicDriver.getDriver().findElement(By.xpath("//span[text()='Admin']")));
     }
 
-    @And("I click on Add button")
+    /*@And("I click on Add button")
     public void iClickOnAddButton() {
         clickOnElement(BasicDriver.getDriver().findElement(By.xpath("//div[@class='orangehrm-header-container']/button")));
-    }
+    }*/
 
 
     @And("I enter a value in to the Password field which is less than characters")

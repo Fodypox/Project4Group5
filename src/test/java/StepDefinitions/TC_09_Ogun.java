@@ -23,23 +23,23 @@ public class TC_09_Ogun extends MyMethods {
 
 
 
-    @Given("I login as an Admin")
+    /*@Given("I login as an Admin")
     public void iLoginAsAnAdmin() {
         BasicDriver.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         sendKeysMethod(BasicDriver.getDriver().findElement(By.xpath("//input[@name='username']")),"Admin");
         sendKeysMethod(BasicDriver.getDriver().findElement(By.xpath("//input[@name='password']")),"admin123");
         clickOnElement(BasicDriver.getDriver().findElement(By.xpath("//button[@type='submit']")));
-    }
+    }*/
 
-    @When("I navigate to Admin User Management page.")
+    /*@When("I navigate to Admin User Management page.")
     public void iNavigateToAdminUserManagementPage() {
         clickOnElement(BasicDriver.getDriver().findElement(By.xpath("//span[text()='Admin']")));
-    }
+    }*/
 
-    @And("I click on Add button")
+    /*@And("I click on Add button")
     public void iClickOnAddButton() {
         clickOnElement(BasicDriver.getDriver().findElement(By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--secondary']")));
-    }
+    }*/
 
     @Then("I verify that all the required elements are displayed \\(User Role, Employee Name,Status, Username, Password, Confirm Password, Cancel, Save)")
     public void iVerifyThatAllTheRequiredElementsAreDisplayedUserRoleEmployeeNameStatusUsernamePasswordConfirmPasswordCancelSave() {
